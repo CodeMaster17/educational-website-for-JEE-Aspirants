@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #EAEDED;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 100vw;
+  background-color: #04293a;
+  justify-content: center;
+  align-items: center;
+  /* for stciky navbar */
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  cursor: pointer;
+
+  /* size 1280 * 854 */
+  background-repeat: no-repeat;
+}
+.logo {
+  /* display: flex; */
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  /* ------added own--------- */
+  margin-left: 80px;
+}
+.nav-list {
+  display: flex;
+  width: 40%;
+  /* background-color: black; */
+  justify-content: center;
+  align-items: center;
+  /* left:40%; */
+}
+.nav-list li {
+  /* to remove bullets*/
+  list-style: none;
+  padding: 6px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  padding: 10vh 10px;
+  font-family: "Luxurious Roman", cursive;
+  font-weight: 200;
+}
+.nav-list li a:hover {
+  color: white;
+  background-color: #152d35;
+  padding: 3vh 10px;
+  /* font-weight: 400; */
+}
+.rightNav {
+  /* background-color: blueviolet; */
+  width: 40%;
+  /* to set the content to the right  */
+  text-align: right;
+}
+#search {
+  padding: 3px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+.btn {
+  /* font-size: 22px; */
+  font-size: calc(1vw + 1vh);
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 0 10px;
+  background-color: #152d35;
+  color: white;
+  font-family: "Luxurious Roman", cursive;
+}
+.btn:hover {
+  /* background-color:#B8E4F0; */
+  background: none;
+  border: 2px solid #577bc1;
+
+  cursor: pointer;
+}
+.background {
+  /* ../ is used to go one folder backward */
+  background: rgba(0, 0, 0, 0.7) url("../img/bg2.jpg");
+  /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+  /* size 1280 * 854 */
+  /* background-repeat: no-repeat;*/
+  width: 100vw;
+  height: 100vh;
+}
+.box-main {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 2; */
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  /* position: relative; */
+}
+.text-big {
+  font-size: 60px;
+  font-family: "Luxurious Roman", cursive;
+}
+.text-small {
+  margin-top: 20px;
+  font-size: 20px;
+  /* font-family: 'Luxurious Roman', cursive; */
+  font-family: "Open Sans", sans-serif;
+}
+.btn-section {
+  margin-top: 20px;
+  font: 2em sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: none;
+  color: white;
+  font-family: "Luxurious Roman", cursive;
+  border: 1px solid white;
+}
+.btn-section:hover {
+  cursor: pointer;
+  border: 3px solid white;
+}
+.question{
+    margin-left:23vw;
+    font-family:"Luxurious Roman", cursive;
+    font-size: 3.5em;
+
+}
+.question-answer{
+    margin-left:30vw;
+    font-family:"Luxurious Roman", cursive;
+    font-size: 3.5em;
+    color:skyblue;
+}
+/* ---------------------Content------------------------------ */
+.content {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border:1px solid grey; */
+  border-radius: 2vw;
+  background-color: white;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 3vw;
+}
+.head {
+  font-size: 2em;
+}
+
+.math-img img {
+  /* height:43vh; */
+  width: 15vw;
+  /* margin-right: 20vw; */
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+.content {
+  box-shadow: 400% 4% #577bc1;
+}
+.all-img img {
+  /* height:43vh; */
+  width: 15vw;
+  /* margin-right: 20vw; */
+  /* -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%); */
+}
+/* ------------------------Footer------------------- */
+.footer{
+  background-color: #152d35;
+  width:100%;
+  height:20vw;
+}
+.back-to-top{
+  background-color: #577bc1;
+}
+.back-to-top a{
+  text-decoration: none;
+  color:white;
+  font-family:"Luxurious Roman", cursive;
+  padding-right: 50vw;
+}
